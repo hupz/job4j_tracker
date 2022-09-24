@@ -2,9 +2,9 @@ package ru.job4j.oop;
 
 public class Error {
 
-    boolean active;
-    int status;
-    String message;
+    private boolean active;
+    private int status;
+    private String message;
 
     public void printInfo() {
         System.out.println("Program work? true or false: " + active);
@@ -13,9 +13,6 @@ public class Error {
     }
 
     public Error() {
-        active = true;
-        status = 0;
-        message = "You program works well";
     }
 
     public Error(boolean active, int status, String message) {
