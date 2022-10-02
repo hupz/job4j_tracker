@@ -13,6 +13,10 @@ public class Item {
         this.id = id;
     }
 
+    public Item() {
+
+    }
+
     public int getId() {
         return id;
     }
@@ -29,7 +33,4 @@ public class Item {
         this.name = name;
     }
 
-    public Item() {
-
-    }
 }
