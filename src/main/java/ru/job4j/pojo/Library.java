@@ -24,7 +24,7 @@ public class Library {
         }
         for (Book book : books) {
             bk = book;
-            if (bk.getName().equals("Clean code")) {
+            if ("Clean code".equals(bk.getName())) {
                 System.out.println(System.lineSeparator() + bk.getName() + " - " + bk.getCostList());
             }
         }
