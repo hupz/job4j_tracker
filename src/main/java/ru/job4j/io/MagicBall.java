@@ -9,12 +9,10 @@ public class MagicBall {
         System.out.println("Я великий Оракул, задай мне вопрос и я отвечу тебе Да либо Нет!");
         String answer = input.nextLine();
         int answerRandom = new Random().nextInt(3);
-        if (answerRandom == 0) {
-            System.out.println("Ваш вопрос: " + answer + " Мой ответ Да!");
-        } else if (answerRandom == 1) {
-            System.out.println("Ваш вопрос: " + answer + " Мой ответ Нет!");
-        } else {
-            System.out.println("Ваш вопрос: " + answer + " Мой ответ Может быть!");
+        switch (answerRandom) {
+            case 0 -> System.out.println("Ваш вопрос: " + answer + " Мой ответ Да!");
+            case 1 -> System.out.println("Ваш вопрос: " + answer + " Мой ответ Нет!");
+            default -> System.out.println("Ваш вопрос: " + answer + " Мой ответ Может быть!");
         }
     }
 }
