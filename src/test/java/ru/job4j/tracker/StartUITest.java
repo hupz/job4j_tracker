@@ -180,7 +180,7 @@ public class StartUITest {
                         + "Item{id=" + one.getId() + ", name='" + one.getName()
                         + "', created=" + one.getCreated().format(DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss"))
                         + "}" + ln
-                        +"Item{id=" + oneSecond.getId() + ", name='" + oneSecond.getName()
+                        + "Item{id=" + oneSecond.getId() + ", name='" + oneSecond.getName()
                         + "', created=" + oneSecond.getCreated().format(DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss"))
                         + "}" + ln
                         + "Menu." + ln
