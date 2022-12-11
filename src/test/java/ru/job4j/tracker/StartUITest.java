@@ -2,8 +2,6 @@ package ru.job4j.tracker;
 
 import org.junit.jupiter.api.Test;
 
-import java.time.format.DateTimeFormatter;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class StartUITest {
@@ -119,9 +117,7 @@ public class StartUITest {
                         + "0. Find item for ID" + ln
                         + "1. Exit" + ln
                         + "=== Find item by id ===" + ln
-                        + "Item{id=" + one.getId() + ", name='" + one.getName()
-                        + "', created=" + one.getCreated().format(DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss"))
-                        + "}" + ln
+                        + one + ln
                         + "Menu." + ln
                         + "0. Find item for ID" + ln
                         + "1. Exit" + ln
@@ -148,9 +144,7 @@ public class StartUITest {
                         + "0. Find item for Name" + ln
                         + "1. Exit" + ln
                         + "=== Find items by name ===" + ln
-                        + "Item{id=" + one.getId() + ", name='" + one.getName()
-                        + "', created=" + one.getCreated().format(DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss"))
-                        + "}" + ln
+                        + one + ln
                         + "Menu." + ln
                         + "0. Find item for Name" + ln
                         + "1. Exit" + ln
@@ -177,12 +171,8 @@ public class StartUITest {
                         + "0. Show all items" + ln
                         + "1. Exit" + ln
                         + "=== Show all items ===" + ln
-                        + "Item{id=" + one.getId() + ", name='" + one.getName()
-                        + "', created=" + one.getCreated().format(DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss"))
-                        + "}" + ln
-                        + "Item{id=" + oneSecond.getId() + ", name='" + oneSecond.getName()
-                        + "', created=" + oneSecond.getCreated().format(DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss"))
-                        + "}" + ln
+                        + one + ln
+                        + oneSecond + ln
                         + "Menu." + ln
                         + "0. Show all items" + ln
                         + "1. Exit" + ln
