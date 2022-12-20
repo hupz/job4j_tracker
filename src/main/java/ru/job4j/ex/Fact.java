@@ -13,6 +13,6 @@ public class Fact {
     }
 
     public static void main(String[] args) {
-        System.out.println("Factorial = " + calc(-8) );
+        System.out.println("Factorial = " + calc(-8));
     }
 }
